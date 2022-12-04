@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <ScrollPane fx:id="scroll" layoutX="45.0" layoutY="60.0" prefHeight="399.0" prefWidth="610.0">
+         <content>
+            <AnchorPane fx:id="anc" prefHeight="393.0" prefWidth="604.0">
+               <children>
+                  <Canvas fx:id="c" height="44.0" layoutX="355.0" layoutY="234.0" width="42.0" />
+                  <Group fx:id="grp" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <MenuBar layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem fx:id="Save" mnemonicParsing="false" text="Save File" />
+                  <MenuItem fx:id="Open" mnemonicParsing="false" text="Open File" />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <MenuItem fx:id="Choose" mnemonicParsing="false" text="Choose Font" />
+                  <MenuItem fx:id="ColorChange" mnemonicParsing="false" text="Change Color" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Insert">
+            <items>
+              <MenuItem fx:id="Add" mnemonicParsing="false" text="Add" />
+                  <MenuItem fx:id="Minus" mnemonicParsing="false" text="Minus" />
+                  <MenuItem fx:id="Product" mnemonicParsing="false" text="Product" />
+                  <MenuItem fx:id="Divide" mnemonicParsing="false" text="Divide" />
+                  <MenuItem fx:id="eql" mnemonicParsing="false" text="Equals" />
+                  <MenuItem fx:id="sqrt" mnemonicParsing="false" text="Square Root" />
+                  <MenuItem fx:id="grt" mnemonicParsing="false" text="Greater Than" />
+                  <MenuItem fx:id="less" mnemonicParsing="false" text="Less Than" />
+                  <MenuItem fx:id="PI" mnemonicParsing="false" text="PI" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
